@@ -7,7 +7,7 @@ from tools.pdf_extractor import (
     extract_text_and_style,
     extract_links_with_text_first_page
 )
-from config import *
+from src.config import *
 from resume_tailor.components.profile_builder import build_user_profile
 from resume_tailor.components.job_search import search_jobs_adzuna
 from resume_tailor.components.markdown_builder import insert_links_into_markdown
