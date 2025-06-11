@@ -1,0 +1,9 @@
+# Streamlit Community Cloud requirements for Resume Tailor app
+streamlit>=1.25.0
+pypandoc
+pymupdf  # for fitz
+pydantic
+requests
+crewai
+crewai_tools
+# Add any other dependencies as needed

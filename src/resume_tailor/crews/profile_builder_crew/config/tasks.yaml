@@ -1,0 +1,21 @@
+build_user_profile_task:
+  description: >
+    Your task is to read the resume text provided and extract a structured profile of the candidate.
+    Focus on:
+    - Full name
+    - Current or last known job title
+    - Skills (a list)
+    - Work experience entries (job title, company, dates)
+    - Education history
+
+    Format your final answer as a JSON object without ```json ``` markups. The keys for JSON output:
+    - full_name
+    - job_title
+    - skills
+    - work_experience
+    - education
+
+    The resume text provided: {original_resume}
+  expected_output: >
+    JSON object
+  agent: profile_builder
