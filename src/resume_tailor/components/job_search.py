@@ -29,6 +29,7 @@ def search_jobs_adzuna(profile: dict, num_results: int = 3, country: str = "ca")
         "what": what,
         "where": location,
         "results_per_page": num_results,
+        "max_days_old": 7,
         "content-type": "application/json"
     }
     resp = requests.get(url, params=params)
