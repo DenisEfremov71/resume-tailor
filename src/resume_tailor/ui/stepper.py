@@ -1,5 +1,5 @@
 import streamlit as st
-from config import STEP_LABELS
+from resume_tailor.config import STEP_LABELS
 
 def render_stepper(current_step: int):
     stepper_md = " → ".join([
