@@ -50,6 +50,19 @@ streamlit run src/resume_tailor/app.py
 
 ## Environment Variables
 - `OPENAI_API_KEY`: Required for AI-powered features. Enter in the sidebar or set as an environment variable.
+- `SERPER_API_KEY`, `ADZUNA_APP_ID`, `ADZUNA_APP_KEY`: Required for job search features.
+
+For local deployment, rename `.example.env` to `.env` and add your own API keys for SERPER and Adzuna:
+
+```
+SERPER_API_KEY=<YOUR_SERPER_API_KEY>
+ADZUNA_APP_ID=<YOUR_ADZUNA_APP_ID>
+ADZUNA_APP_KEY=<YOUR_ADZUNA_APP_KEY>
+```
+
+You can obtain these keys from:
+- [SerpApi](https://serpapi.com/)
+- [Adzuna Developer Portal](https://developer.adzuna.com/)
 
 ## Tech Stack
 - Streamlit
