@@ -7,7 +7,6 @@ from tools.pdf_extractor import (
     extract_text_and_style,
     extract_links_with_text_first_page
 )
-from resume_tailor.config import *
 from resume_tailor.components.profile_builder import build_user_profile
 from resume_tailor.components.job_search import search_jobs_adzuna
 from resume_tailor.components.markdown_builder import insert_links_into_markdown
@@ -17,6 +16,30 @@ from resume_tailor.ui.stepper import render_stepper
 
 # --- CrewAI imports ---
 from resume_tailor.crews.crewai_logic import run_crew_for_job
+
+# Define required constants directly here:
+OPENAI_KEY_MISSING_INFO = "⚠️ Please enter your OpenAI API key in the sidebar to get started"
+HOW_TO_COPY_URL_INFO = (
+    "ℹ️ For some job boards, you may need to click the job link, let it redirect, and then copy the final URL from your browser's address bar. Paste that URL below."
+)
+REDIRECT_INFO = """
+<details>
+<summary><b>How to get the redirected job URL?</b></summary>
+<ol>
+    <li>Click the job title link below.</li>
+    <li>Wait for the page to fully load (you may be redirected).</li>
+    <li>Copy the URL from your browser's address bar.</li>
+    <li>Paste it into the URL field below.</li>
+</ol>
+</details>
+"""
+HOW_TO_COPY_URL_HELP = "Click the job link below, let it redirect, then copy the final URL from your browser's address bar and paste it here."
+STEP_LABELS = [
+    "1. **Upload Resume**",
+    "2. **Build Profile**",
+    "3. **Select Jobs**",
+    "4. **Tailor & Download**"
+]
 
 # --- Determine current step ---
 if "parsed_resume" not in st.session_state:
