@@ -7,3 +7,6 @@ requests
 crewai
 crewai_tools
 # Add any other dependencies as needed
+
+# “Editable” install (installs directly from source folder)
+-e .
