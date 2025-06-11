@@ -6,6 +6,7 @@ pydantic
 requests
 crewai
 crewai_tools
+pysqlite3>=0.5.4
 # Add any other dependencies as needed
 
 # “Editable” install (installs directly from source folder)
